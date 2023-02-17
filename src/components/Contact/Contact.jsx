@@ -12,21 +12,23 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_vxa1fpp",
+        "template_81xo8uq",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "eZyeqmCXZ7UdzLsmS"
       )
       .then(
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+         // form.reset();
+          HTMLFormElement.prototype.reset.call(form);
         },
         (error) => {
           console.log(error.text);
         }
       );
+      
   };
 
   return (
@@ -46,7 +48,7 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name..."/>
+          <input type="text" name="user_name" className="user"  placeholder="Name..." />
           <input type="email" name="user_email" className="user" placeholder="Email..."/>
           <textarea name="message" className="user" placeholder="Message..."/>
           <input type="submit" value="Send" className="button"/>
