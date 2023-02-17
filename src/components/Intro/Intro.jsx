@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
-import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+import boy from "../../img/mee.png";
+import thumbup from "../../img/deskdev.png";
+import thumweb from "../../img/webdev.png";
+import thumMob from "../../img/mobdev.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -27,7 +27,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>I Am</span>
           <span>Anas JEGOUAL</span>
           <span>
              Software Engineering Student.
@@ -45,25 +45,17 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
+        <img src={Vector1} alt="" />
         <img src={boy} alt="" />
         {/* animation */}
-        <motion.img
-          initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
-          transition={transition}
-          src={glassesimoji}
-          alt=""
-        />
-
         <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          initial={{ top: "-4%", left: "64%" }}
+          whileInView={{ left: "60%" }}
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={thumbup} text1="Desktop" text2="Developer" />
         </motion.div>
 
         {/* animation */}
@@ -74,9 +66,19 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumMob} text1="Mobile" text2="Developer" />
         </motion.div>
-
+      {/* animation */}
+      <motion.div
+          initial={{ top: "-4%", left: "74%" }}
+          whileInView={{ left: "0%" }}
+          transition={transition}
+          className="floating-div"
+        >
+          {/* floatinDiv mein change hy dark mode ka */}
+          <FloatinDiv img={thumweb} text1="Web" text2="Developer" />
+        </motion.div>
+        
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
           className="blur"

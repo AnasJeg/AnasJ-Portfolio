@@ -23,13 +23,13 @@
   font-size: 3rem;
 }
 .i-name > :nth-child(2) {
-  color: var(--orange);
+  color: var(--blue);
   font-weight: bold;
   font-size: 3rem;
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -38,7 +38,7 @@
   height: 2rem;
 }
 .i-icons {
-  margin-top: 3rem;
+  margin-top: -1rem;
   display: flex;
   gap: 0rem;
 }
@@ -85,7 +85,7 @@
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background: #edd0ff;
+  background: #a2dbf5;
   filter: blur(212px);
   z-index: -9;
   top: -18%;
