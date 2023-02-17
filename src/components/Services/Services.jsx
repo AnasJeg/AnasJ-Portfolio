@@ -24,7 +24,7 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>What We are Good At !</span>
+        <span style={{ color: darkMode ? "white" : "" }}>I'm Good At !</span>
         <span>services</span>
         <spane>
           Lorem ispum is simpley dummy text of printing of printing Lorem
@@ -46,8 +46,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Developer Web"}
+            detail={"Html, Css, Php/Laravel, JS(React/Node), Angular/RxJS, JEE, Spring Boot"}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +58,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Developer Desktop"}
+            detail={"Java, C#"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,16 +70,16 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Developer mobile"}
             detail={
-              "Canva"
+              "Flutter/Dart"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
         <div
           className="blur s-blur2"
-          style={{ background: "var(--purple)" }}
+          style={{ background: "var(--#A8FCFF)" }}
         ></div>
       </div>
     </div>

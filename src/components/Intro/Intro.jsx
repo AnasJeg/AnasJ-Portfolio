@@ -9,7 +9,6 @@ import thumMob from "../../img/mobdev.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -38,9 +37,14 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
+          <a href="https://github.com/AnasJeg" target="_blank" rel="noreferrer">
           <img src={Github} alt=""/>
+          </a>
+         
+          <a href="https://www.linkedin.com/in/anas-jegoual-9b72491b9/" target="_blank" rel="noreferrer">
           <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          </a>
+          
         </div>
       </div>
       {/* right image side */}
