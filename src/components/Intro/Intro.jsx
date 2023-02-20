@@ -26,7 +26,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>I am</span>
           <span>Anas JEGOUAL</span>
           <span>
              Software Engineering Student.
@@ -41,7 +41,7 @@ const Intro = () => {
           <img src={Github} alt=""/>
           </a>
          
-          <a href="https://www.linkedin.com/in/anas-jegoual-9b72491b9/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/anasjegoual/" target="_blank" rel="noreferrer">
           <img src={LinkedIn} alt="" />
           </a>
           
