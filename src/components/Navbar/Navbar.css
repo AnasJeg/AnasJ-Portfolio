@@ -13,9 +13,13 @@
   gap: 2rem;
 }
 
-.n-name {
+.n-logo {
   font-size: 1.3rem;
   font-weight: bold;
+}
+.logo_img{
+  width: 135px;
+  margin-top: 1rem;
 }
 .n-right {
   flex: 1;

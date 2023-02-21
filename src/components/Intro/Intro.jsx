@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
+import Bg1 from "../../img/bg1.png";
+import Bg2 from "../../img/bg2.png";
 import boy from "../../img/mee.png";
 import thumbup from "../../img/deskdev.png";
 import thumweb from "../../img/webdev.png";
@@ -49,8 +49,8 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector2} alt="" />
-        <img src={Vector1} alt="" />
+        <img src={Bg1} alt="" />
+        <img src={Bg2} alt="" />
         <img src={boy} alt="" />
         {/* animation */}
         <motion.div

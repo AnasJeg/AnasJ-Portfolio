@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import Web from "../../img/web.png";
+import Desktop from "../../img/desktop.png";
+import Mobile from "../../img/mobile-app.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Anas_Jegoual from './Anas_Jegoual.pdf';
@@ -45,7 +45,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
+            emoji={Web}
             heading={"Developer Web"}
             detail={"Html, Css, Php/Laravel, JS(React/Node), Angular/RxJS, JEE, Spring Boot"}
           />
@@ -57,7 +57,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
+            emoji={Desktop}
             heading={"Developer Desktop"}
             detail={"Java, C#"}
           />
@@ -69,7 +69,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Humble}
+            emoji={Mobile}
             heading={"Developer mobile"}
             detail={
               "Flutter/Dart"

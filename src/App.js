@@ -23,7 +23,6 @@ function App() {
       <Intro />
       <Services />
       <Experience />
-     
       <Portfolio />
       <Contact />
       <Footer />
